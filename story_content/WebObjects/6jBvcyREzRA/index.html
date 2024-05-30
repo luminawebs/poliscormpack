@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Slider/Carousel</title>
+
+<link rel='stylesheet' href='bootstrap.min.css'>
+<link rel='stylesheet' href='flickity.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+
+<main class="slider">
+    <section class="slider__component js-slider">
+        <!--LOADER-->
+        <div class="slider__loader js-slider-loader" role="loader"></div>
+        <!--LOADER-->
+        
+        <!--CONTROLS-->
+        <div class="slider__controls is-prev" role="controls">
+            <button type="button" class="js-slider-button-prev" onclick="stopAudio()">
+                <i class="fas fa-long-arrow-alt-left"></i>
+            </button>
+        </div>
+        <div class="slider__controls is-next" role="controls">
+            <button type="button" class="js-slider-button-next" onclick="stopAudio()">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+        </div>
+        <!--CONTROLS-->
+        
+        <article class="slider__item" role="item" data-num="1">
+            <!--IMAGE-->
+            <div class="slider__item__image is-background">
+                <img src="imgs/001.jpg" alt="">
+            </div>
+            <!--IMAGE-->
+
+            <!--TEXT-->
+            <div class="slider__item__text">
+                <span>1/8</span>
+                <h1>ESCENARIOS</h1>
+                
+                <p>Es el conjunto de estrategias y secuencias didácticas que vinculan metodologías de trabajo, contenidos, materiales y actividades que desarrollarás cada semana.</p>
+                
+                <div class="playButton"  data-audio="audio/escenarios.mp3"> </div>
+
+                <!-- <a href="#" role="button">
+                    Ver más
+                </a> -->
+            </div>
+            <!--TEXT-->
+        </article>
+        
+        <article class="slider__item" role="item" data-num="2">
+            <!--IMAGE-->
+            <div class="slider__item__image is-background">
+                <img src="imgs/002.jpg" alt="">
+            </div>
+            <!--IMAGE-->
+
+            <!--TEXT-->
+            <div class="slider__item__text">
+                <span>2/8</span>
+                <h1>Simuladores</h1>
+                
+                <p>Es un programa de software que modela los fenómenos de la realidad y te posibilitará construir conocimientos a partir de tu exploración.</p>
+                
+                <div class="playButton"  data-audio="audio/simuladores.mp3"> </div>
+                
+                <!-- <a href="#" role="button">
+                    Ver más
+                </a> -->
+            </div>
+            <!--TEXT-->
+        </article>
+        
+        <article class="slider__item" role="item" data-num="3">
+            <!--IMAGE-->
+            <div class="slider__item__image is-background">
+                <img src="imgs/003.jpg" alt="">
+            </div>
+            <!--IMAGE-->
+
+            <!--TEXT-->
+            <div class="slider__item__text">
+                <span>3/8</span>
+                <h1>Laboratorios <br> Online</h1>
+                
+                <p>Es un entorno interactivo que te permitirá modificar parámetros y variables para experimentar cómo reacciona el sistema ante un cambio. </p>
+                
+                
+                <div class="playButton"  data-audio="audio/laboratorios.mp3"> </div>
+
+                <!-- <a href="#" role="button">
+                    Ver más
+                </a> -->
+            </div>
+            <!--TEXT-->
+        </article>
+        
+        <article class="slider__item" role="item" data-num="4">
+            <!--IMAGE-->
+            <div class="slider__item__image is-background">
+                <img src="imgs/004.jpg" alt="">
+            </div>
+            <!--IMAGE-->
+
+            <!--TEXT-->
+            <div class="slider__item__text">
+                <span>4/8</span>
+                <h1>Juegos serios</h1>
+                
+                <p>Es un entorno interactivo que te permitirá realizar jugadas para la toma de decisiones apropiadas en una situación del quehacer profesional.</p>
+                
+                
+                <div class="playButton"  data-audio="audio/juegos-serios.mp3"> </div>
+                <!-- <a href="#" role="button">
+                    Ver más
+                </a> -->
+            </div>
+            <!--TEXT-->
+        </article>
+        
+        <article class="slider__item" role="item" data-num="5">
+            <!--IMAGE-->
+            <div class="slider__item__image is-background">
+                <img src="imgs/005.jpg" alt="">
+            </div>
+            <!--IMAGE-->
+
+            <!--TEXT-->
+            <div class="slider__item__text">
+                <span>5/8</span>
+                <h1>Software <br> conceptual</h1>
+                
+                <p>Es un software donde ingresas información del entorno real, para realizar una serie de diagnósticos y análisis que te ayudará a la toma apropiada de decisiones, de acuerdo con los conceptos vistos.</p>
+                
+                
+                <div class="playButton"  data-audio="audio/software.mp3"> </div>
+                <!-- <a href="#" role="button">
+                    Ver más
+                </a> -->
+            </div>
+            <!--TEXT-->
+        </article>
+        <article class="slider__item" role="item" data-num="5">
+            <!--IMAGE-->
+            <div class="slider__item__image is-background">
+                <img src="imgs/moocs.jpg" alt="">
+            </div>
+            <!--IMAGE-->
+
+            <!--TEXT-->
+            <div class="slider__item__text">
+                <span>6/8</span>
+                <h1>Moocs</h1>
+                
+                <p>MOOC (Massive Open Online Course) Es un curso corto en línea, abierto y gratuito, orientado a que desarrolles aprendizajes sobre temas de interés personal o profesional. </p>
+                
+
+                <a  role="button" href="https://conocimientoparatodos.poligran.edu.co/" target="_blank">Conócelos dando clic aquí </a>
+
+
+                <div class="playButton"  data-audio="audio/moocs.mp3"> </div>
+
+            </div>
+            <!--TEXT-->
+        </article>
+        <article class="slider__item" role="item" data-num="5">
+            <!--IMAGE-->
+            <div class="slider__item__image is-background">
+                <img src="imgs/006.jpg" alt="">
+            </div>
+            <!--IMAGE-->
+
+            <!--TEXT-->
+            <div class="slider__item__text">
+                <span>7/8</span>
+                <h1>Mi-books</h1>
+                
+                <p>Son libros interactivos multimedia especializados en el proceso formativo y metacognitivo que favorecerán tu aprendizaje.  </p>
+                
+
+                <a role="button" href="https://journal.poligran.edu.co/index.php/libros/issue/archive" target="_blank">Conócelos dando clic aquí</a>
+
+                
+                <div class="playButton"  data-audio="audio/books.mp3"> </div>
+            </div>
+            <!--TEXT-->
+        </article>
+        <article class="slider__item" role="item" data-num="5">
+            <!--IMAGE-->
+            <div class="slider__item__image is-background">
+                <img src="imgs/007.jpg" alt="">
+            </div>
+            <!--IMAGE-->
+
+            <!--TEXT-->
+            <div class="slider__item__text">
+                <span>8/8</span>
+                <h1>Caja de <br> herramientas</h1>
+                
+                <p>Es un conjunto de herramientas online y gratuitas (software, guías, tutoriales, aplicativos entre otros), organizadas por categorías de acuerdo con tus necesidades de aprendizaje que emplearás durante toda la carrera. </p>
+                
+               
+                <a role="button" href="http://caja.poligran.edu.co" target="_blank">Conócelos dando clic aquí </a>
+                
+                <div class="playButton"  data-audio="audio/caja-de-herramientas.mp3"> </div>
+            </div>
+            <!--TEXT-->
+        </article>
+    </section>
+</main>
+<!-- partial -->
+  <script src='js/jquery-3.5.1.min.js'></script>
+<script src='js/TweenMax.min.js'></script>
+<script src='js/imgLiquid-min.js'></script>
+<script src='js/flickity.pkgd.min.js'></script>
+<script src='js/4643810438.js'></script><script  src="./script.js"></script>
+
+<script  src="audios.js" defer></script>
+
+
+
+<audio id="audioPlayer"></audio>
+
+</body>
+</html>

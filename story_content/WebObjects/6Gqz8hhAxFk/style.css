@@ -1,0 +1,318 @@
+body{
+  overflow: hidden;
+}
+
+button{
+  margin: 10px;
+  padding: 0px;
+}
+
+
+h2{
+  font-weight: 900;
+  color: #1fb2de;
+}
+
+
+section a{
+  color: #fff9e2;
+  background-color: rgb(18, 37, 71);
+}
+section a:hover{
+  color: #fff9e2;
+  background-color: rgb(18, 37, 71);
+}
+
+.containerI{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  /* width: inherit; */
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.container{
+  padding: 160px 100px 160px 200px ;
+}
+
+.container .col-md-6:nth-child(1) {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+
+
+.modal-dialog{
+  margin-top: 90px !important;
+}
+
+.yimgs{
+  width: 170px;
+  height: 150px;
+  cursor: pointer;
+  border: 3px solid snow;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px;
+  /* margin: 15px; */
+  background-size: cover;
+  background-position: center;
+}
+
+.yimgs:hover{
+  opacity: 0.5;
+  transition: 0.5s all;
+}
+
+.i1980-1{ background-image: url(images/1980/img01.png); }
+.i1980-2{ background-image: url(images/1980/img02.png); }
+.i1980-3{ background-image: url(images/1980/img03.png); }
+.i1980-4{ background-image: url(images/1980/img04.png); }
+.i1980-5{ background-image: url(images/1980/img05.png); }
+
+.i1981-1{ background-image: url(images/1981/img01.png); }
+.i1981-2{ background-image: url(images/1981/img02.png); }
+
+.i1991-1{ background-image: url(images/1991/img01.png); }
+.i1991-2{ background-image: url(images/1991/img02.png); }
+.i1991-3{ background-image: url(images/1991/1991.jpg); }
+
+.i2008-1{ background-image: url(images/2008/bloque.jpg); }
+.i2008-2{ background-image: url(images/2008/decanatura-poli.jpg); }
+.i2008-3{ background-image: url(images/2008/plazoleta-central.jpg); }
+.i2008-4{ background-image: url(images/2008/plazoleta-central2.jpg); }
+.i2008-5{ background-image: url(images/2008/plazoleta-personas.jpg); }
+
+.i2011-1{ background-image: url(images/2011/poli01.jpg); }
+.i2011-2{ background-image: url(images/2011/poli02.jpg); }
+.i2011-3{ background-image: url(images/2011/poli03.jpg); }
+
+.i2012-1{ background-image: url(images/2012/img01.jpg); }
+.i2012-2{ background-image: url(images/2012/img02.jpg); }
+.i2012-3{ background-image: url(images/2012/poli-ilumno.jpg); }
+
+.i2013-1{ background-image: url(images/2013/inauguracion-medellin.jpg); }
+.i2013-2{ background-image: url(images/2013/med-poli.jpg); }
+.i2013-3{ background-image: url(images/2013/medellin-poli.jpg); }
+.i2013-4{ background-image: url(images/2013/poli-med.jpg); }
+.i2013-5{ background-image: url(images/2013/politecnicograncolombianomedellin-mejorar4.jpg); }
+
+.i2017-1{ background-image: url(images/2017/imagen2.jpg); }
+.i2017-2{ background-image: url(images/2017/imagen3.png); }
+.i2017-3{ background-image: url(images/2017/imagen4.png); }
+
+
+.i2019-1{ background-image: url(images/2019/cursos.jpg); }
+
+
+.i2020-1{ background-image: url(images/2020/citycampus01.jpg); }
+.i2020-2{ background-image: url(images/2020/citycampus02.jpg); }
+.i2020-3{ background-image: url(images/2020/citycampus03.jpg); }
+
+
+.i2021-1{ background-image: url(images/2021/centros-inv.png); }
+
+
+
+.i2022-1{ background-image: url(images/2022/poli-bog.jpg); }
+.i2022-2{ background-image: url(images/2022/poli-med.jpg); }
+
+
+.ihoy-1{ background-image: url(images/hoy/poli-hoy.jpg); }
+
+
+#navbar-example{
+  background-color: #0f385a;
+  padding-right: 1rem;
+  min-width: 250px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #0f385a;
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  font-size: 24px;
+  /* font-weight: 100; */
+  background-color: #22A7F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+section:nth-child(0) {
+  background: #9B59B6;
+  background-image: url(images/bg001.jpg);
+  overscroll-behavior-block:contain;
+  background-size: cover;
+}
+
+section:nth-child(1) {
+  background: white;
+}
+section:nth-child(2){
+  background: rgb(155, 226, 226);
+  background-image: url(images/bgs/001ana.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+section:nth-child(3), section:nth-child(9), section:nth-child(14) {
+  background: #22A7F0;
+  background-image: url(images/bgs/002.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+section:nth-child(4), section:nth-child(10), section:nth-child(15) {
+  background: #f98b0e;
+  background-image: url(images/bgs/004.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+section:nth-child(5), section:nth-child(11) {
+  background: #9B59B6;
+  background-image: url(images/bgs/imagen1.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+section:nth-child(6), section:nth-child(12), section:nth-child(8)  {
+  background: #03C9A9;
+  background-image: url(images/bgs/001.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+section:nth-child(7), section:nth-child(13) {
+  background: #ffcc00;
+  background-image: url(images/bgs/002.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.nav__wrapper {
+  position: fixed;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+.nav {
+  margin: 0 0 95px 40px;
+  text-shadow: 1px 1px 2px black;
+}
+.nav__counter {
+  font-size: 22px;
+  transition: all 0.15s ease-out;
+}
+.nav__title {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0 0 0em;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav__body {
+  font-weight: 100;
+  font-size: 18px;
+  font-size: 18px;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav li {
+  position: relative;
+  transition: all 0.3s ease-out;
+  margin-bottom: 0em;
+}
+.nav li:after {
+  content: "";
+  display: block;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  height: 250px;
+  width: 20px;
+  position: absolute;
+  left: -30px;
+  top: 15px;
+}
+.nav li a {
+  display: block;
+  padding: 0;
+  color: #fff;
+  transition: all 0.15s ease-out;
+}
+
+
+.btnAudio{
+  position: absolute;
+  width: 120px;
+  right: 0px;
+}
+
+.btnAudio img{
+  width: 100%;
+  cursor: pointer;
+}
+
+.btnAudio img:hover{
+  width: 100%;
+  opacity: 0.6;
+
+}
+
+.nav li a:hover {
+  background-color: transparent;
+  padding-left: 1em;
+}
+.nav li a:focus {
+  background-color: transparent;
+}
+.nav li.active {
+  pointer-events: none;
+  padding-left: 1em;
+}
+
+.nav li.active a{
+  color: #69dcff;
+}
+
+.nav li.active:after {
+  width: 35px;
+  height: 400px;
+  top: 35px;
+}
+.nav li.active .nav__counter {
+  font-size: 44px;
+}
+.nav li.active .nav__title {
+  height: 40px;
+  opacity: 1;
+  overflow: visible;
+}
+.nav li.active .nav__body {
+  height: 80px;
+  opacity: 1;
+  overflow: visible;
+}

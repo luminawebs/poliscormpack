@@ -1,0 +1,21 @@
+body, html{
+    overflow: hidden;  margin: 0px; padding: 0px;
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#playButton, #playButton2{
+position: absolute;
+background-image: url(play.svg);
+background-size: contain;
+background-position: center;
+width: 200px;
+height: 200px;
+
+}
+
+iframe{border: 0px; border-radius: 10px;}
