@@ -28,16 +28,35 @@ xmlDoc=xmlhttp.responseXML;
 This is done for each node retrieved. The final value is assigned to a variable pre-defined in the player.
 The find and replace is done so that some formatting can be retrieved from the xml document since XSL/XSLT and CSS can't be used for formatting. */
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const ssn = urlParams.get("ssn");
-    const getProgress = async (ssn) => {
-      let progress = await fetch(
-        `https://poli.edunest.co/api/get-progress?ssn=${ssn}`
-      );
-      const num = await progress.json();
-      player.SetVar("Competency1", num.progress);
-    };
-    getProgress(ssn);
+
+ //   const urlParams = new URLSearchParams(window.location.search);
+ //   const ssn = urlParams.get("ssn");
+//    const getProgress = async (ssn) => {
+ //     let progress = await fetch(
+ //       `https://poli.edunest.co/api/get-progress?ssn=${ssn}`
+  //    );
+ //     const num = await progress.json();
+ //     player.SetVar("Competency1", num.progress);
+ //   };
+//    getProgress(ssn);
+
+
+const urlParams = new URLSearchParams(window.location.search);
+const ssn = urlParams.get("ssn");
+
+const fetchData = async () => {
+  try {
+    const progress = await fetch(
+      `https://poli.edunest.co/api/get-progress?ssn=${ssn}`
+    );
+    const num = await progress.json();
+    player.SetVar("Competency1", num.progress);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+};
+
+fetchData();
 }
 
 window.Script2 = function()
