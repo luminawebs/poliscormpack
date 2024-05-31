@@ -923,7 +923,7 @@ window.Script90 = function()
 const ssn = urlParams.get("ssn");
   
 if (ssn) {
-  await fetch(
+   fetch(
       `https://poli.edunest.co/api/update-section?progress=40&ssn=${ssn}`
     )
       .then((response) => {
@@ -935,6 +935,8 @@ if (ssn) {
   } else {
    /* window.alert("User Not Logged In!");*/
   }
+  
+  
 }
 
 window.Script91 = function()
@@ -1181,6 +1183,9 @@ if (ssn) {
   } else {
     // window.alert("User Not Logged In!");
   }
+  
+  
+  
 }
 
 window.Script137 = function()
